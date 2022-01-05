@@ -1,5 +1,9 @@
 # javascript-practice
 Javascript practice
 
-## map() Exercises (Jan 2022)
+## mapFilterReduceExercises (Jan 2022)
 - arraySquared.js
+- sumPositiveElement.js
+
+
+source: https://crocoder.dev/blog/map-filter-reduce-exercises
