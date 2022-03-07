@@ -20,7 +20,7 @@ function wordsStartWith(text) {
 
   if (wordsToFix.length > 0) {
     console.log('The following words do not comply with the request', wordsToFix);
-    return;
+    return false;
   }
 
   if (wordsToFix.length === 0 && textToArray.length < requiredTextLength) {
