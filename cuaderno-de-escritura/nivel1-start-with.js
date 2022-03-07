@@ -11,7 +11,6 @@ const requiredTextLength = 56;
 function wordsStartWith(text) {
   const textToLowerCase = text.toLowerCase();
   const textToArray = textToLowerCase.split(' ');
-  // const wordsToFix = [];
 
   const conditionToLowerCase = condition.map(letter => {
     return letter.toLowerCase();
@@ -26,12 +25,13 @@ function wordsStartWith(text) {
 
   if (wordsToFix.length === 0 && textToArray.length < requiredTextLength) {
     console.log(`Your text is not long enough. You still need ${requiredTextLength - textToArray.length} words to meet the requirements.`)
-    return;
+    return false;
   } else if (wordsToFix.length === 0 && textToArray.length > requiredTextLength) {
     console.log(`Text is longer than what was requested`)
-    return;
+    return false;
   } else {
     console.log(`Your text is approved.`)
+    return true
   }
 }
 
